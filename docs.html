@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide — Ledgerly</title>
+<meta name="description" content="How to install Ledgerly, set up your business, enter sales and purchases, run reports, print documents and back up your data.">
+<meta name="theme-color" content="#8B3103">
+<link rel="canonical" href="https://ledgerly-website-iota.vercel.app/docs">
+
+<meta property="og:site_name" content="Ledgerly">
+<meta property="og:title" content="Ledgerly Guide — installing, invoicing, reports and backups">
+<meta property="og:description" content="How to install Ledgerly, set up your business, enter sales and purchases, run reports, print documents and back up your data.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ledgerly-website-iota.vercel.app/docs">
+<meta property="og:image" content="https://ledgerly-website-iota.vercel.app/assets/screens/invoice-editor.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ledgerly-website-iota.vercel.app/assets/screens/invoice-editor.png">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://ledgerly-website-iota.vercel.app/docs#page",
+      "headline": "Ledgerly Guide",
+      "description": "How to install Ledgerly, set up your business, enter sales and purchases, run reports, print documents and back up your data.",
+      "url": "https://ledgerly-website-iota.vercel.app/docs",
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://ledgerly-website-iota.vercel.app/#app"
+      },
+      "publisher": {
+        "@id": "https://ledgerly-website-iota.vercel.app/#publisher"
+      },
+      "proficiencyLevel": "Beginner"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ledgerly-website-iota.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guide",
+          "item": "https://ledgerly-website-iota.vercel.app/docs"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ledgerly-website-iota.vercel.app/docs#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can two people use Ledgerly at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet. Ledgerly is single-user on one machine. Multiple users and permissions are planned."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sell stock I have not entered yet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ledgerly will not stop you, and the product simply shows a negative quantity until the purchase is entered. Goods often arrive before the paperwork does, and blocking the sale would stop you trading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can I not delete an invoice in Ledgerly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because deleting financial records makes history unexplainable. Cancel it instead: the reversal is recorded alongside the original, so anybody looking later can see what happened and when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to a customer who stops buying?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deactivate them. They disappear from lists and pickers, but their invoices and ledger stay intact. Deleting them would orphan that history, and you can restore them at any time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Ledgerly handle tax or GST?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in this version. Tax handling is planned."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does Ledgerly store my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a single SQLite file at %LOCALAPPDATA%\\Ledgerly\\data\\ledgerly.db on your own computer. Nothing is sent anywhere. Close the application and copy the whole data folder to back it up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when the Ledgerly trial ends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is a further seven-day grace period in which nothing changes. After that Ledgerly becomes read-only: everything can still be opened, searched, printed and exported, and only entering new transactions stops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a Ledgerly licence key?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Message +92 312 0033431 on WhatsApp with your business name. That name is printed at the top of every invoice, statement and report."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://ledgerly-website-iota.vercel.app/docs#howto-install",
+      "name": "Install Ledgerly and enter your first invoice",
+      "totalTime": "PT10M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Install",
+          "text": "Download LedgerlySetup and double-click it. No administrator rights are needed.",
+          "url": "https://ledgerly-website-iota.vercel.app/docs#install"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Create your login",
+          "text": "Ledgerly ships with no default password, so the first launch asks you to choose a username and password.",
+          "url": "https://ledgerly-website-iota.vercel.app/docs#first-run"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Add customers, suppliers and products",
+          "text": "Enter the parties you trade with and the products you sell, then bring in opening stock as a purchase invoice.",
+          "url": "https://ledgerly-website-iota.vercel.app/docs#setup"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Post a sale",
+          "text": "Choose a customer, add product lines, enter any payment, and post. Stock, balances, the ledger and every report update together.",
+          "url": "https://ledgerly-website-iota.vercel.app/docs#sales"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">L</span> Ledgerly</a>
+    <nav class="site-nav">
+      <a class="hide-sm" href="/#features">Features</a>
+      <a class="hide-sm" href="/#screens">Screenshots</a>
+      <a href="docs" aria-current="page">Guide</a>
+      <a href="/#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap docs">
+
+  <aside class="docs__nav">
+    <strong>On this page</strong>
+    <ol></ol>
+  </aside>
+
+  <article class="prose">
+
+    <h1>Guide</h1>
+    <p style="font-size:1.1rem;color:var(--text-secondary)">
+      Everything from installing Ledgerly to closing off a month. If you are
+      in a hurry, the first three sections get you invoicing.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="install">Installing</h2>
+
+    <p>
+      Download <a href="downloads/LedgerlySetup-0.1.0.exe" download>LedgerlySetup-0.1.0.exe</a>
+      and double-click it. There is nothing else to install — no Python, no
+      database, no Visual C++ runtime — and it does not ask for an
+      administrator password, because it installs for your user account
+      only.
+    </p>
+
+    <h3>The SmartScreen warning</h3>
+    <p>
+      The installer is not code-signed yet, so the first time you run it
+      Windows shows a blue box saying <em>“Windows protected your PC”</em>.
+      That is Windows saying it has not seen this file before, not that
+      anything is wrong with it. Click <strong>More info</strong>, then
+      <strong>Run anyway</strong>.
+    </p>
+
+    <p>To satisfy yourself the download is intact, open PowerShell and run:</p>
+    <p><code>Get-FileHash .\LedgerlySetup-0.1.0.exe -Algorithm SHA256</code></p>
+    <p>
+      The result should match the SHA-256 shown on the
+      <a href="/#download">download section</a> of the home page. If
+      it does not, delete the file and download it again.
+    </p>
+
+    <h3>What gets installed where</h3>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Where</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The application</td>
+            <td><code>%LOCALAPPDATA%\Programs\Ledgerly</code></td>
+          </tr>
+          <tr>
+            <td>Your data, backups and logs</td>
+            <td><code>%LOCALAPPDATA%\Ledgerly</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Those are deliberately separate. Uninstalling or reinstalling Ledgerly
+      removes the application and leaves your books untouched — the
+      uninstaller reminds you where they are.
+    </p>
+
+    <div class="note note--plain">
+      <p>
+        <strong>Portable installs.</strong> If you want the application and
+        its data together on a USB stick or a network share, set the
+        environment variable <code>LEDGERLY_DATA_DIR</code> to the folder you
+        want before launching.
+      </p>
+    </div>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="first-run">First run</h2>
+
+    <p>
+      Ledgerly ships with no default username or password. A shipped
+      credential is a published one, so instead the first launch asks you to
+      create the account you will sign in with.
+    </p>
+
+    <ol>
+      <li>Enter your name — this appears in the title bar when you are signed in.</li>
+      <li>Choose a username with no spaces.</li>
+      <li>Choose a password of at least six characters, and confirm it.</li>
+    </ol>
+
+    <div class="note">
+      <p>
+        <strong>There is no password reset.</strong> Nobody can recover it for
+        you, because there is no server holding your account. Write it down
+        somewhere safe before you go any further.
+      </p>
+    </div>
+
+    <p>
+      After that you are signed in and the dashboard appears. You are on a
+      14-day trial with every feature switched on.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="setup">Setting up your business</h2>
+
+    <p>Do these three in order — invoices need all of them.</p>
+
+    <h3>Customers and suppliers</h3>
+    <p>
+      Go to <strong>Customers</strong> and press <strong>Add</strong>. Name is
+      required; city and phone are optional but worth filling in, since they
+      print on statements and make searching easier.
+    </p>
+    <p>
+      If the name already exists, Ledgerly says so but still lets you save.
+      Two real customers genuinely can share a name in different towns, so
+      it warns rather than refuses.
+    </p>
+    <p><strong>Suppliers</strong> works identically.</p>
+
+    <h3>Products</h3>
+    <figure>
+      <img src="assets/screens/products.png" alt="The product list showing unit, pack size, purchase price, selling price and reorder level." loading="lazy">
+      <figcaption>Products, with the prices that get offered on new invoices.</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Field</th><th>What it is for</th></tr></thead>
+        <tbody>
+          <tr><td>Unit</td><td>KG, UNIT, LITER and so on. It prints on invoices and keeps quantities meaningful.</td></tr>
+          <tr><td>Pack size</td><td>How much is in one pack — a 50&nbsp;KG bag of sugar is a pack size of 50. For reference; it does not change the arithmetic.</td></tr>
+          <tr><td>Purchase price</td><td>Offered by default when this product goes on a purchase invoice.</td></tr>
+          <tr><td>Selling price</td><td>Offered by default on a sales invoice.</td></tr>
+          <tr><td>Reorder level</td><td>Optional. Below this, the product shows as low stock on the dashboard. Leave blank for no warning.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note note--plain">
+      <p>
+        <strong>Prices here are only defaults.</strong> What an invoice
+        actually charged is stored on that invoice. Changing a price today
+        never alters what last month's invoices say — which is what keeps
+        old documents honest.
+      </p>
+    </div>
+
+    <h3>Opening stock</h3>
+    <p>
+      Ledgerly works out stock from movement history rather than storing a
+      number, so stock you already hold has to arrive as a document. Enter a
+      purchase invoice dated before you started — from the supplier you
+      actually bought it from, or from a supplier called something like
+      “Opening balance” if you no longer know.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="sales">Entering a sale</h2>
+
+    <figure>
+      <img src="assets/screens/invoice-editor.png" alt="The invoice editor with a customer selected, three product lines added, and live totals." loading="lazy">
+      <figcaption>The entry row sits above the lines. Product, quantity, Enter, repeat.</figcaption>
+    </figure>
+
+    <ol>
+      <li>Go to <strong>Sales</strong> and press <strong>New</strong>.</li>
+      <li>Choose the customer. You can type a few letters to find them.</li>
+      <li>Set the date if it is not today. Back-dating is fine; future dates are not accepted, because that is nearly always a mistyped year.</li>
+      <li>Choose a product. Its selling price fills in automatically.</li>
+      <li>Type the quantity, and the price too if you have negotiated a different one.</li>
+      <li>Press <kbd>Enter</kbd> or <strong>Add line</strong>. The cursor returns to the product box, ready for the next line.</li>
+      <li>Enter a discount if any, and how much the customer is paying now.</li>
+      <li>Press <strong>Post invoice</strong>.</li>
+    </ol>
+
+    <h3>Draft or posted</h3>
+    <p>
+      <strong>Save draft</strong> keeps the invoice without doing anything
+      else — no stock moves, no balance changes, no ledger entry. Drafts are
+      for something half-entered that you want to come back to. They do not
+      take an invoice number, so an abandoned draft leaves no gap in your
+      numbering.
+    </p>
+    <p>
+      <strong>Post invoice</strong> makes it real. In one step it assigns the
+      invoice number, takes the goods out of stock, debits the customer,
+      records the sale, and records the payment if you entered one. Either
+      all of that happens or none of it does — you can never end up with
+      stock gone and no invoice to show for it.
+    </p>
+
+    <h3>Fixing a mistake</h3>
+    <p>
+      A posted invoice cannot be edited. That is deliberate: an invoice the
+      customer already has in their hand should not change quietly behind
+      them.
+    </p>
+    <p>
+      Instead, select it and press <strong>Cancel invoice</strong>. The stock
+      comes back, the balance reverses, any payment taken with it reverses
+      too — and both the original and the reversal stay on record, so the
+      history explains what happened. Then enter the correct invoice.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="purchases">Entering a purchase</h2>
+    <p>
+      <strong>Purchases</strong> works exactly like Sales, in the opposite
+      direction: choose a supplier, add lines at their prices, and post.
+      Stock goes up, and you owe the supplier.
+    </p>
+    <p>
+      There is one extra field. <strong>Their reference</strong> is the
+      supplier's own invoice number, which will not match yours — worth
+      recording so you can reconcile against their paperwork later.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="payments">Recording payments</h2>
+
+    <p>
+      A payment entered with an invoice is recorded automatically. Use the
+      <strong>Payments</strong> screen for everything else — a customer
+      settling two invoices with one cheque, paying on account, or paying
+      weeks later.
+    </p>
+
+    <ol>
+      <li>Choose <em>Received from customers</em> or <em>Paid to suppliers</em>.</li>
+      <li>Press <strong>Record</strong>.</li>
+      <li>Choose the party. Their current balance appears, so you can check it before typing anything.</li>
+      <li>Enter the amount, date, method and any cheque or transfer reference.</li>
+    </ol>
+
+    <p>
+      Entered one wrongly? Select it and press <strong>Reverse</strong>. As
+      with invoices, the entry is mirrored rather than deleted — a cash book
+      with holes in it is worse than one showing a correction.
+    </p>
+
+    <div class="note note--plain">
+      <p>
+        <strong>Payments are not yet allocated to specific invoices.</strong>
+        A receipt reduces what the customer owes overall, which is how most
+        small businesses run their accounts. Per-invoice allocation is
+        planned.
+      </p>
+    </div>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="stock">Watching stock</h2>
+
+    <figure>
+      <img src="assets/screens/inventory.png" alt="Current stock with quantities, values and low-stock flags." loading="lazy">
+      <figcaption>Current stock, derived from every movement rather than stored.</figcaption>
+    </figure>
+
+    <p>The <strong>Inventory</strong> screen has three views:</p>
+    <ul>
+      <li><strong>Current stock</strong> — what you hold now, and what it is worth at today's purchase price.</li>
+      <li><strong>Stock movements</strong> — every increase and decrease, with the document that caused it. This is where you look when a figure surprises you.</li>
+      <li><strong>Low stock only</strong> — products at or below their reorder level.</li>
+    </ul>
+
+    <p>
+      Because stock is the sum of its movements, it can never disagree with
+      your invoices. If it looks wrong, the movement list will show you
+      exactly which document is responsible.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="ledgers">Ledgers and statements</h2>
+
+    <figure>
+      <img src="assets/screens/ledger.png" alt="A customer ledger with invoices, receipts and a running balance." loading="lazy">
+      <figcaption>A running statement, with the closing balance at the bottom.</figcaption>
+    </figure>
+
+    <p>
+      <strong>Ledger</strong> shows one customer or supplier at a time:
+      every invoice, every payment, and a balance that accumulates down the
+      page. The closing balance is the figure to read down the phone when
+      chasing money.
+    </p>
+    <p>
+      Press <strong>PDF</strong> or <strong>Print</strong> and you get every
+      statement for that side in a single document — a whole collections
+      round in one print job, not one at a time.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="reports">Reports</h2>
+
+    <p>The <strong>Reports</strong> screen carries eight, each with a date range where it makes sense:</p>
+    <ul>
+      <li>Sales by product, by customer, and by date</li>
+      <li>Purchases by supplier and by product</li>
+      <li>Customer outstanding — who owes you what</li>
+      <li>Supplier outstanding — what you owe</li>
+      <li>Current stock</li>
+    </ul>
+
+    <p>
+      Every money figure comes from the same ledger, so two reports cannot
+      contradict each other. A customer's line on the receivables report is
+      the same number as the closing balance on their statement — by
+      construction, not by luck.
+    </p>
+
+    <h3>Report view on Sales and Purchases</h3>
+    <p>
+      The invoice lists are working screens rather than reports, so their
+      export controls sit behind a <strong>Report view</strong> button. It
+      opens whatever the list is currently showing as a printable register —
+      and its PDF option gives you the register followed by every invoice in
+      it, one per page. That is how you print a month of invoices in a single
+      run.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="printing">Printing and exporting</h2>
+
+    <p>Every report, ledger and register has the same four buttons.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Format</th><th>Use it when</th></tr></thead>
+        <tbody>
+          <tr><td><strong>PDF</strong></td><td>Sending something to a customer, or filing it. Looks exactly like the printout.</td></tr>
+          <tr><td><strong>Excel</strong></td><td>You want to sort, filter or total it yourself.</td></tr>
+          <tr><td><strong>CSV</strong></td><td>Feeding another system, or an accountant's software.</td></tr>
+          <tr><td><strong>Print</strong></td><td>Straight to paper, through the normal Windows print dialog.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Excel and CSV exports contain <em>real numbers</em>, not text that looks
+      like numbers. You can select a column and see a total immediately. The
+      accounting style — brackets around negatives — is applied as a number
+      format in Excel, so it reads correctly and still adds up.
+    </p>
+
+    <figure>
+      <img src="assets/screens/printed-invoice.png" alt="A printed invoice with the business name, customer details, lines and closing totals." loading="lazy">
+      <figcaption>Printed output carries your licensed business name at the top.</figcaption>
+    </figure>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="licence">Licence and activation</h2>
+
+    <p>
+      Ledgerly runs free for <strong>14 days</strong> with everything enabled.
+      After that:
+    </p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Period</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Days 1–14</td><td>Full use. A quiet banner shows the days remaining.</td></tr>
+          <tr><td>The next 7 days</td><td>Still full use. The banner becomes a reminder to renew.</td></tr>
+          <tr><td>After that</td><td>Read-only. Everything can still be opened, searched, printed and exported. Only entering new transactions stops.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Read-only rather than locked out, on purpose. Those are your accounting
+      records, and you may need them during an audit or a tax filing. A
+      lapsed licence should not hold them hostage.
+    </p>
+
+    <h3>Getting a key</h3>
+    <p>
+      Message us on WhatsApp at
+      <a href="https://wa.me/923120033431" target="_blank" rel="noopener"><strong>+92&nbsp;312&nbsp;0033431</strong></a>
+      with your business name. We issue a key tied to that name — and it is
+      the name that gets printed at the top of every invoice, statement and
+      report, so send it exactly as you want it to appear.
+    </p>
+
+    <h3>Entering it</h3>
+    <ol>
+      <li>Open <strong>Settings</strong>, or click <strong>Enter licence key</strong> in the banner.</li>
+      <li>Type the key. Spaces, dashes and capitals do not matter — paste it however it arrived.</li>
+      <li>Press <strong>Activate</strong>.</li>
+    </ol>
+    <p>
+      Activation needs an internet connection once. Afterwards Ledgerly works
+      entirely offline.
+    </p>
+
+    <h3>Renewing</h3>
+    <p>
+      When your licence is extended you do <em>not</em> enter a new key.
+      Ledgerly re-checks quietly in the background and picks up the new date
+      on its own. To force a check immediately, press
+      <strong>Check for renewal</strong> in Settings.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="backup">Backing up</h2>
+
+    <p>
+      Everything you enter lives in one file:
+    </p>
+    <p><code>%LOCALAPPDATA%\Ledgerly\data\ledgerly.db</code></p>
+    <p>
+      Paste that path into the Explorer address bar to open the folder. You
+      will see two companions, <code>ledgerly.db-wal</code> and
+      <code>ledgerly.db-shm</code>.
+    </p>
+
+    <div class="note">
+      <p>
+        <strong>Close Ledgerly before copying, and copy all three files.</strong>
+        The <code>-wal</code> file holds recent transactions that have not yet
+        been folded into the main file. Copying <code>ledgerly.db</code> on its
+        own, while the application is running, can give you a backup that is
+        missing your most recent work — or one that will not open at all.
+      </p>
+    </div>
+
+    <p>A routine worth keeping to:</p>
+    <ol>
+      <li>Close Ledgerly at the end of the day.</li>
+      <li>Copy the whole <code>data</code> folder somewhere else — a USB stick, a network drive, or a synced folder such as OneDrive or Google Drive.</li>
+      <li>Name the copy with the date, so you keep several and not just the latest one.</li>
+    </ol>
+
+    <p>
+      To restore, close Ledgerly, put the files back in the same folder, and
+      start it again.
+    </p>
+
+    <div class="note note--plain">
+      <p>
+        <strong>Automatic encrypted backup to Google Drive is in development.</strong>
+        Until it ships, the copy above is your backup, and it is worth
+        putting a reminder in your phone.
+      </p>
+    </div>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="faq">Common questions</h2>
+
+    <h3>Can two people use it at once?</h3>
+    <p>
+      Not yet. Ledgerly is single-user on one machine. Multiple users and
+      permissions are planned.
+    </p>
+
+    <h3>Can I sell stock I have not entered yet?</h3>
+    <p>
+      Yes — Ledgerly will not stop you, and the product simply shows a
+      negative quantity until the purchase is entered. That is deliberate:
+      goods often arrive before the paperwork does, and blocking the sale
+      would stop you trading.
+    </p>
+
+    <h3>Why can I not delete an invoice?</h3>
+    <p>
+      Because deleting financial records makes history unexplainable. Cancel
+      it instead: the reversal is recorded alongside the original, and
+      anybody looking later can see what happened and when.
+    </p>
+
+    <h3>What happens to a customer who stops buying?</h3>
+    <p>
+      Deactivate them. They disappear from lists and pickers, but their
+      invoices and ledger stay intact. Deleting them would orphan that
+      history. You can restore them at any time with <strong>Show inactive</strong>.
+    </p>
+
+    <h3>Does it handle tax or GST?</h3>
+    <p>Not in this version. Tax handling is planned.</p>
+
+    <h3>The date filter does not seem to do anything</h3>
+    <p>
+      Check the year in the <em>From</em> box. The filters default to the last
+      month, so anything older is hidden until you widen the range.
+    </p>
+
+    <h3>Where are the log files?</h3>
+    <p>
+      <code>%LOCALAPPDATA%\Ledgerly\logs</code>. If you report a problem,
+      <code>ledgerly_error.log</code> is the useful one. It contains no
+      passwords.
+    </p>
+
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="help">Still stuck?</h2>
+    <p>
+      Message us on WhatsApp at
+      <a href="https://wa.me/923120033431" target="_blank" rel="noopener"><strong>+92&nbsp;312&nbsp;0033431</strong></a>.
+      Say what you were doing when it went wrong, and attach
+      <code>ledgerly_error.log</code> if the application showed an error.
+    </p>
+
+    <p style="margin-top:36px">
+      <a class="btn btn--primary" href="/#download">Download Ledgerly</a>
+    </p>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Ledgerly &middot; Bookkeeping and stock control for small business</span>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/#download">Download</a>
+      <a href="https://wa.me/923120033431" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="">
+</dialog>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

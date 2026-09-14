@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerly — offline bookkeeping and stock control for small business</title>
+<meta name="description" content="A desktop ERP for small and medium businesses. Sales, purchases, stock, customer and supplier ledgers, and reports that always agree. Works offline. One-time licence.">
+<meta name="theme-color" content="#8B3103">
+
+<link rel="canonical" href="https://ledgerly-website-iota.vercel.app/">
+
+<meta property="og:site_name" content="Ledgerly">
+<meta property="og:title" content="Ledgerly — offline bookkeeping and stock control">
+<meta property="og:description" content="Sales, purchases, stock, ledgers and reports for small business. Works offline. Your data stays on your machine. One-time licence.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ledgerly-website-iota.vercel.app/">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://ledgerly-website-iota.vercel.app/assets/screens/dashboard.png">
+<meta property="og:image:width" content="3300">
+<meta property="og:image:height" content="2100">
+<meta property="og:image:alt" content="The Ledgerly dashboard showing receivables, payables and stock value.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ledgerly — offline bookkeeping and stock control">
+<meta name="twitter:description" content="Sales, purchases, stock, ledgers and reports for small business. Works offline.">
+<meta name="twitter:image" content="https://ledgerly-website-iota.vercel.app/assets/screens/dashboard.png">
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="application-name" content="Ledgerly">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ledgerly-website-iota.vercel.app/#app",
+      "name": "Ledgerly",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Accounting and inventory software",
+      "operatingSystem": "Windows 10, Windows 11",
+      "softwareVersion": "0.1.0",
+      "fileSize": "34.5 MB",
+      "downloadUrl": "https://ledgerly-website-iota.vercel.app/downloads/LedgerlySetup-0.1.0.exe",
+      "installUrl": "https://ledgerly-website-iota.vercel.app/#download",
+      "softwareHelp": {
+        "@id": "https://ledgerly-website-iota.vercel.app/docs#page"
+      },
+      "url": "https://ledgerly-website-iota.vercel.app/",
+      "image": "https://ledgerly-website-iota.vercel.app/assets/screens/dashboard.png",
+      "screenshot": [
+        "https://ledgerly-website-iota.vercel.app/assets/screens/dashboard.png",
+        "https://ledgerly-website-iota.vercel.app/assets/screens/sales.png",
+        "https://ledgerly-website-iota.vercel.app/assets/screens/invoice-editor.png",
+        "https://ledgerly-website-iota.vercel.app/assets/screens/inventory.png",
+        "https://ledgerly-website-iota.vercel.app/assets/screens/ledger.png",
+        "https://ledgerly-website-iota.vercel.app/assets/screens/reports.png"
+      ],
+      "description": "Offline desktop bookkeeping and stock control for small and medium businesses. Sales and purchase invoices, inventory, customer and supplier ledgers, payments and reports. Data stays in a single file on your own machine.",
+      "featureList": [
+        "Sales and purchase invoices with atomic posting",
+        "Inventory derived from movement history",
+        "Customer and supplier ledgers with running balances",
+        "Customer receipts and supplier payments",
+        "Sales, purchase, stock and outstanding reports",
+        "Export to PDF, Excel and CSV, and direct printing",
+        "Bulk printing of invoices and statements",
+        "Works entirely offline"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR",
+        "description": "Free 14-day trial with every feature enabled, then a one-time licence key. No subscription.",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@id": "https://ledgerly-website-iota.vercel.app/#publisher"
+      },
+      "publisher": {
+        "@id": "https://ledgerly-website-iota.vercel.app/#publisher"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ledgerly-website-iota.vercel.app/#publisher",
+      "name": "Ledgerly",
+      "url": "https://ledgerly-website-iota.vercel.app/",
+      "logo": "https://ledgerly-website-iota.vercel.app/assets/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales and technical support",
+        "telephone": "+92-312-0033431",
+        "availableLanguage": [
+          "en",
+          "ur"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ledgerly-website-iota.vercel.app/#website",
+      "url": "https://ledgerly-website-iota.vercel.app/",
+      "name": "Ledgerly",
+      "publisher": {
+        "@id": "https://ledgerly-website-iota.vercel.app/#publisher"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">L</span> Ledgerly</a>
+    <nav class="site-nav">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#screens">Screenshots</a>
+      <a href="docs">Guide</a>
+      <a href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------------------------------------------------------------- -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero__text">
+        <span class="eyebrow">Windows desktop &middot; works offline</span>
+        <h1>Your books, your stock, your machine.</h1>
+        <p class="hero__lede">
+          Ledgerly handles sales, purchases, inventory, customer and supplier
+          ledgers, and the reports that tie them together — without a
+          subscription, an internet connection, or an accountant to set it up.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#download">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1v9m0 0L4.5 6.5M8 10l3.5-3.5M2 12.5v1A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-1"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Download for Windows
+          </a>
+          <a class="btn btn--lg" href="docs">Read the guide</a>
+        </div>
+        <p class="hero__meta num">
+          Version 0.1.0 &middot; 34.5&nbsp;MB &middot; Windows 10 &amp; 11 (64-bit) &middot;
+          14-day free trial, no sign-up
+        </p>
+      </div>
+
+      <figure class="hero__shot">
+        <img src="assets/screens/dashboard.png" width="3300" height="2100"
+             alt="The Ledgerly dashboard, showing receivables, payables, stock value, today's sales and a low-stock warning."
+             fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section>
+    <div class="wrap">
+      <div class="claims">
+        <div>
+          <strong>Nothing to sign up for</strong>
+          <span>No account, no cloud, no monthly fee.</span>
+        </div>
+        <div>
+          <strong>Your data stays put</strong>
+          <span>A single file on your own computer.</span>
+        </div>
+        <div>
+          <strong>Built for fast entry</strong>
+          <span>Type, press Enter, next line.</span>
+        </div>
+        <div>
+          <strong>Numbers that agree</strong>
+          <span>Every report reads the same ledger.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section id="features" class="tinted">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What it does</span>
+        <h2>Everything a trading business actually needs</h2>
+        <p>
+          Not a general-purpose accounting package with a hundred settings.
+          The parts a distributor, wholesaler or kiryana store uses every day.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M2 3.5h12M2 8h12M2 12.5h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sales &amp; purchase invoices</h3>
+          <p>
+            Pick a customer, pick a product, type the quantity. The price fills
+            itself in and you overtype it when you have negotiated. Posting is
+            one action, and it either records everything or nothing.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M2 5.5 8 2l6 3.5v5L8 14l-6-3.5v-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 5.5 8 9l6-3.5M8 9v5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Stock that explains itself</h3>
+          <p>
+            Stock is not a number somebody edited — it is the sum of every
+            movement. When a figure looks wrong you can see exactly which
+            document caused it.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1.5v13M11.5 4H6.25a2.25 2.25 0 0 0 0 4.5h3.5a2.25 2.25 0 0 1 0 4.5H4"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Customer &amp; supplier ledgers</h3>
+          <p>
+            A running statement for every party, with a closing balance you can
+            read down the phone. What the customer sees and what your
+            receivables report says are the same number.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13V7m5 6V3m5 10v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Reports that tie out</h3>
+          <p>
+            Sales by product, customer or date. Purchases, stock, receivables,
+            payables. Every figure is derived from the same ledger, so two
+            reports cannot disagree.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M4.5 11.5v-8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v8" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="6" width="12" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4.5 10h7v4h-7z" fill="var(--bg-elevated)" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Print or export anything</h3>
+          <p>
+            Every list and report goes to PDF, Excel, CSV or the printer.
+            Excel gets real numbers you can total — not text that looks like
+            numbers. Print a month of invoices as one job.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1.5 3 3.5v4c0 3.2 2.1 6.1 5 7 2.9-.9 5-3.8 5-7v-4L8 1.5Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="m6 8 1.5 1.5L10.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Nothing is quietly deleted</h3>
+          <p>
+            Customers are deactivated, not removed. A wrong invoice is
+            cancelled and reversed, and both the original and the reversal
+            stay on record. Your history is always explainable.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Screenshots</span>
+        <h2>A look inside</h2>
+        <p>Real screens from the application, not mockups. Click any image to enlarge.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Application screens">
+        <button class="tab" role="tab" aria-selected="true"  aria-controls="p-sales"     id="t-sales">Sales</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-invoice"   id="t-invoice">New invoice</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-inventory" id="t-inventory">Inventory</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-ledger"    id="t-ledger">Ledger</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-reports"   id="t-reports">Reports</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-products"  id="t-products">Products</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-payments"  id="t-payments">Payments</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-settings"  id="t-settings">Settings</button>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-sales" aria-labelledby="t-sales">
+        <img src="assets/screens/sales.png" alt="The sales register, listing posted invoices with totals, amounts paid and balances." loading="lazy">
+        <p class="shot__caption">Every invoice, filtered by date and status. <strong>Report view</strong> turns the list into a printable register — or into one PDF containing every invoice in it.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-invoice" aria-labelledby="t-invoice" hidden>
+        <img src="assets/screens/invoice-editor.png" alt="Entering a sales invoice: customer, date, product lines, and live subtotal, discount, total and balance." loading="lazy">
+        <p class="shot__caption">Choose a product and its price appears; type a quantity and press <kbd>Enter</kbd>. Totals update as you go, and the balance is always in view.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-inventory" aria-labelledby="t-inventory" hidden>
+        <img src="assets/screens/inventory.png" alt="Current stock for every product, with quantities, values and low-stock flags." loading="lazy">
+        <p class="shot__caption">Current stock, the movement history behind it, or just what has fallen below its reorder level.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-ledger" aria-labelledby="t-ledger" hidden>
+        <img src="assets/screens/ledger.png" alt="A customer ledger showing invoices, receipts and a running balance." loading="lazy">
+        <p class="shot__caption">A running statement per customer or supplier. Print one, or print every statement at once for a collections round.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-reports" aria-labelledby="t-reports" hidden>
+        <img src="assets/screens/reports.png" alt="The reports screen showing customer outstanding balances with a totals row." loading="lazy">
+        <p class="shot__caption">Eight reports, one export bar. Take the whole set as a single month-end PDF.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-products" aria-labelledby="t-products" hidden>
+        <img src="assets/screens/products.png" alt="The product list with units, pack sizes, purchase and selling prices, and reorder levels." loading="lazy">
+        <p class="shot__caption">Prices here are defaults. What an invoice actually charged stays on that invoice, so changing a price never rewrites history.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-payments" aria-labelledby="t-payments" hidden>
+        <img src="assets/screens/payments.png" alt="Payments received from customers, with dates, amounts, methods and references." loading="lazy">
+        <p class="shot__caption">Receipts and payments, on their own or alongside an invoice. The party's current balance is shown before you type the amount.</p>
+      </div>
+
+      <div class="shot" role="tabpanel" id="p-settings" aria-labelledby="t-settings" hidden>
+        <img src="assets/screens/settings.png" alt="The settings screen showing licence status, the licensed business name and the expiry date." loading="lazy">
+        <p class="shot__caption">Licence status, the business name printed on your documents, and a renewal check.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section class="tinted">
+    <div class="wrap">
+      <div class="split split--narrow-first">
+        <div>
+          <span class="eyebrow">On paper</span>
+          <h2>Documents you can hand to a customer</h2>
+          <ul>
+            <li><strong>Your business name</strong> on every invoice, statement and report.</li>
+            <li><strong>Figures that line up.</strong> Money columns use tabular
+              numerals, so decimal points sit in a straight line down the page.</li>
+            <li><strong>Negatives in brackets</strong> — the accounting convention,
+              which survives photocopying and black-and-white printing where
+              red ink does not.</li>
+            <li><strong>Headings repeat</strong> on every page, because a long
+              table without them is unreadable by page three.</li>
+          </ul>
+          <p style="margin-top:26px">
+            <a class="btn" href="docs#printing">How printing and export work</a>
+          </p>
+        </div>
+        <figure class="paper">
+          <img src="assets/screens/printed-invoice.png" alt="A printed Ledgerly invoice showing the business name, customer details, product lines and closing totals." loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Getting going</span>
+        <h2>Running in about ten minutes</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Install it</h3>
+          <p>
+            One file, double-clicked. No Python, no database server, no
+            administrator password. It installs for your user only.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Create your login</h3>
+          <p>
+            Ledgerly ships with no default password, so the first thing it
+            asks is what yours should be.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Add what you sell</h3>
+          <p>
+            Your customers, suppliers and products. Opening stock goes in as
+            a purchase or an adjustment.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Start invoicing</h3>
+          <p>
+            Post your first sale. Stock, balances, the ledger and every report
+            update in the same instant.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section class="tinted">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Your data</span>
+          <h2>It lives on your computer</h2>
+          <p style="color:var(--text-secondary)">
+            Ledgerly keeps everything in one file under your own user folder.
+            No server, no cloud account, nothing to lose access to if a
+            subscription lapses or a company changes its terms.
+          </p>
+          <p style="color:var(--text-secondary)">
+            That cuts both ways, so it is worth being plain about it: backing
+            up is your responsibility. Copy that file somewhere safe — a USB
+            stick, a network drive, or a synced folder — on a schedule you
+            will actually keep to.
+          </p>
+          <p style="margin-top:24px">
+            <a class="btn" href="docs#backup">Where your file lives, and how to back it up</a>
+          </p>
+        </div>
+        <div class="grid" style="grid-template-columns:1fr">
+          <article class="card">
+            <h3>Uninstalling never removes your books</h3>
+            <p>
+              The database sits outside the installation folder on purpose.
+              Removing or reinstalling the application cannot take your
+              records with it — the uninstaller tells you where they remain.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Nothing is transmitted</h3>
+            <p>
+              The only time Ledgerly uses the internet is to check a licence
+              key, once, when you activate it. After that it runs entirely
+              offline, and a renewal is picked up quietly next time you are
+              connected.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section id="download">
+    <div class="wrap">
+      <div class="download-card">
+        <span class="eyebrow">Download</span>
+        <h2>Ledgerly for Windows</h2>
+        <p style="color:var(--text-secondary);max-width:56ch">
+          Free for 14 days, with everything switched on. No card, no sign-up,
+          no email address.
+        </p>
+
+        <div class="hero__actions" style="margin-top:26px">
+          <a class="btn btn--primary btn--lg" href="downloads/LedgerlySetup-0.1.0.exe" download>
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1v9m0 0L4.5 6.5M8 10l3.5-3.5M2 12.5v1A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-1"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            LedgerlySetup-0.1.0.exe
+          </a>
+          <a class="btn btn--lg" href="docs#install">Installation guide</a>
+        </div>
+
+        <dl class="facts">
+          <div>
+            <dt>Version</dt>
+            <dd class="num">0.1.0</dd>
+          </div>
+          <div>
+            <dt>Size</dt>
+            <dd class="num">34.5 MB</dd>
+          </div>
+          <div>
+            <dt>Requires</dt>
+            <dd>Windows 10 or 11, 64-bit</dd>
+          </div>
+          <div style="grid-column:1/-1">
+            <dt>SHA-256</dt>
+            <dd class="checksum">7ae7d1c31a87072140f49a993ffa715b03573a9c22b24d06e396877d5cb87ba0</dd>
+          </div>
+        </dl>
+
+        <div class="note">
+          <p>
+            <strong>Windows will warn you the first time.</strong> This
+            installer is not code-signed yet, so SmartScreen shows
+            “Windows protected your PC”. Choose <strong>More info</strong>,
+            then <strong>Run anyway</strong>. If you would rather verify it
+            first, check the SHA-256 above against the file you downloaded —
+            the guide shows the one-line command.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <section id="licence" class="tinted">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">After the trial</span>
+          <h2>One key, one message</h2>
+          <p style="color:var(--text-secondary)">
+            When the trial ends, message us on WhatsApp and we will issue a
+            licence key for your business. Enter it once, under
+            <strong>Settings → Licence</strong>, and Ledgerly is activated on
+            that machine. The business name on your key is what gets printed
+            at the top of every invoice and report.
+          </p>
+          <p style="margin-top:26px">
+            <a class="btn wa btn--lg"
+               href="https://wa.me/923120033431?text=Hello%2C%20I%20would%20like%20a%20Ledgerly%20licence%20key.%20My%20business%20name%20is%3A%20"
+               target="_blank" rel="noopener">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.69 8.23-8.25 8.23Z"/>
+              </svg>
+              WhatsApp +92 312 0033431
+            </a>
+          </p>
+        </div>
+        <div class="grid" style="grid-template-columns:1fr">
+          <article class="card">
+            <h3>The trial does not lock you out</h3>
+            <p>
+              When it expires there is a further seven days in which nothing
+              changes. Only after that does Ledgerly become read-only — and
+              even then you can still open, search, print and export
+              everything. Only entering new transactions stops.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Renewals need no retyping</h3>
+            <p>
+              When your licence is extended, Ledgerly picks it up on its own
+              next time it is online. You do not enter a new key.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Ledgerly &middot; Bookkeeping and stock control for small business</span>
+    <nav>
+      <a href="docs">Guide</a>
+      <a href="#download">Download</a>
+      <a href="https://wa.me/923120033431" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="">
+</dialog>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

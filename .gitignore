@@ -1,0 +1,8 @@
+# Local scratch note, not site content -- it would otherwise be served
+# as a public file at /ledgerlywebsite.
+ledgerlywebsite
+
+.DS_Store
+Thumbs.db
+.vercel/
+node_modules/

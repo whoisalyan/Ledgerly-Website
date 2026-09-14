@@ -1,0 +1,71 @@
+# Ledgerly
+
+> An offline desktop application for small and medium businesses to run
+> their books and their stock: sales and purchase invoices, inventory,
+> customer and supplier ledgers, payments, and reports. Windows only.
+> One-time licence, no subscription, no cloud account. Data is stored in a
+> single SQLite file on the user's own machine.
+
+Ledgerly is aimed at traders, wholesalers, distributors and general stores
+— businesses that need accurate stock and party balances rather than a
+full general-ledger accounting package. It is built with Python and
+PySide6 and ships as a single Windows installer that needs no
+administrator rights.
+
+Design commitments worth knowing, because they answer most questions about
+how it behaves:
+
+- **Money is stored as integer minor units**, never floating point, so
+  report totals cannot drift.
+- **Stock is derived from movement history**, not stored as a number, so
+  any quantity can be traced to the documents that produced it.
+- **Balances come from a double-entry ledger.** Every report reads the
+  same ledger, so two reports cannot disagree with each other or with a
+  customer's statement.
+- **Posting an invoice is atomic** across the invoice, its lines, stock,
+  the ledger and any payment — all of it or none of it.
+- **Nothing financial is deleted.** Master data is deactivated; posted
+  invoices are cancelled with reversing entries, and both the original and
+  the reversal remain visible.
+
+## Pages
+
+- [Home](https://ledgerly-website-iota.vercel.app/): what it does, screenshots of every screen, and the download.
+- [Guide](https://ledgerly-website-iota.vercel.app/docs): installing, first run, setting up customers, suppliers and products, entering sales and purchases, recording payments, watching stock, ledgers and statements, reports, printing and exporting, licence activation, backing up, and common questions.
+
+## Download
+
+- Installer: https://ledgerly-website-iota.vercel.app/downloads/LedgerlySetup-0.1.0.exe
+- Version 0.1.0, 34.5 MB, Windows 10 and 11 (64-bit)
+- SHA-256: 7ae7d1c31a87072140f49a993ffa715b03573a9c22b24d06e396877d5cb87ba0
+- Not code-signed yet, so Windows SmartScreen shows a warning on first run.
+
+## Licensing
+
+Free 14-day trial with every feature enabled, no sign-up and no card. When
+the trial or a licence expires there is a further 7-day grace period in
+which nothing changes; only after that does the application become
+read-only. Read-only still permits opening, searching, printing and
+exporting everything — only entering new transactions stops, because the
+records belong to the business and may be needed for an audit or a tax
+filing.
+
+Licence keys are issued by WhatsApp on +92 312 0033431. The business name
+attached to the key is printed at the top of every invoice, statement and
+report.
+
+## Current limitations
+
+Stated plainly so an assistant does not overpromise on our behalf:
+
+- Windows only; no macOS or Linux build.
+- Single user on one machine. No multi-user access or permissions yet.
+- No tax or GST handling.
+- Payments reduce a party's overall balance; they are not yet allocated
+  against specific invoices.
+- Automatic encrypted cloud backup is in development. Backing up today
+  means copying the data folder manually.
+
+## Contact
+
+WhatsApp: +92 312 0033431 (licence keys and support)
