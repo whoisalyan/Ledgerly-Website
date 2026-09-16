@@ -44,7 +44,10 @@
     document.querySelectorAll(".shot img, .paper img, .prose figure img").forEach((image) => {
       image.style.cursor = "zoom-in";
       image.addEventListener("click", () => {
-        picture.src = image.currentSrc || image.src;
+        // data-full is the widest variant. Without it the lightbox would
+        // enlarge whichever small file the layout chose, which is exactly
+        // the wrong one to blow up.
+        picture.src = image.dataset.full || image.currentSrc || image.src;
         picture.alt = image.alt;
         lightbox.showModal();
       });
