@@ -4,14 +4,12 @@
   "trailingSlash": false,
   "headers": [
     {
-      "comment": "Hashed image variants. The filename contains a hash of the bytes, so a changed image is always a new URL and `immutable` is an honest promise. It was not before: these were served immutable under stable filenames, so editing one in place left every previous visitor looking at the old bytes with no way for the browser to find out.",
       "source": "/assets/screens/w/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "comment": "The unhashed source PNGs, referenced only by og:image and the schema.org screenshots. These can be replaced in place, so they get a short life and must be revalidated -- never immutable.",
       "source": "/assets/screens/(.*).png",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
@@ -24,14 +22,12 @@
       ]
     },
     {
-      "comment": "Stylesheet, script and favicon are not hashed, so they must be revalidated or a deploy would not reach anybody who had already visited.",
       "source": "/assets/(style.css|app.js|favicon.svg)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
-      "comment": "The installer is versioned in its filename, so it can be cached hard.",
       "source": "/downloads/(.*)",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
@@ -39,7 +35,6 @@
       ]
     },
     {
-      "comment": "HTML must always be revalidated, or a deployment is invisible to returning visitors.",
       "source": "/(.*).html",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }

@@ -61,3 +61,42 @@ permanently** — deleting the file later does not reclaim it.
 That is fine for a handful of releases. Past that, move the binaries to
 GitHub Releases (or Vercel Blob) and point the download button at the
 release URL instead.
+
+## Cache policy, and why the filenames have hashes
+
+`assets/screens/w/` holds the responsive variants the pages actually
+reference, and each filename carries a hash of its own bytes:
+
+```
+sales-1000.b56899f4d0.webp
+```
+
+They are served `immutable` for a year, which is only safe *because* of
+that hash. Earlier they were served `immutable` under stable filenames,
+and correcting an image left every previous visitor looking at the old
+one — the browser had been told there was no point checking. A hashed
+name makes a changed image a new URL, so a fix always lands.
+
+Everything unhashed — the source PNGs, `og-card.png`, `style.css`,
+`app.js` and the HTML — is served `must-revalidate`, or a deployment
+would be invisible to anyone who had already visited.
+
+Two things to remember when editing this file:
+
+- **`vercel.json` takes no comments and no extra keys.** A `comment`
+  property inside a header rule fails schema validation and the whole
+  deployment stops. Explanations belong here instead.
+- **Keep the `source` patterns from overlapping.** When two rules matched
+  the same path, the broader one won and a deliberately long cache came
+  out as something else entirely.
+
+### After changing any screenshot
+
+```bash
+python tools/optimise_screens.py       # in the application repo
+python tools/apply_image_manifest.py   # rewrites the markup from the manifest
+```
+
+The second refuses to finish if any reference points at a file that is
+not on disk, which is the failure a hand-edited hashed filename would
+otherwise cause.
