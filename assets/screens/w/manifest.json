@@ -1,0 +1,276 @@
+{
+  "customers": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 8966,
+      "file": "customers-640.019bda24a0.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 17032,
+      "file": "customers-1000.ce3db0de62.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 36172,
+      "file": "customers-1600.8391686f9a.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 56048,
+      "file": "customers-2200.8fd68a9a68.webp"
+    }
+  ],
+  "dashboard": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 7828,
+      "file": "dashboard-640.f5bb99ba73.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 16306,
+      "file": "dashboard-1000.b7d4003ad7.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 33902,
+      "file": "dashboard-1600.680307ee8c.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 55250,
+      "file": "dashboard-2200.a9aaadf0f7.webp"
+    }
+  ],
+  "inventory": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 13700,
+      "file": "inventory-640.0699ffbbfd.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 26096,
+      "file": "inventory-1000.9b9d6f075f.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 56378,
+      "file": "inventory-1600.1b6e74d025.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 87578,
+      "file": "inventory-2200.f1da16d75d.webp"
+    }
+  ],
+  "invoice-editor": [
+    {
+      "width": 640,
+      "height": 441,
+      "bytes": 13262,
+      "file": "invoice-editor-640.2afaa5063f.webp"
+    },
+    {
+      "width": 1000,
+      "height": 689,
+      "bytes": 25590,
+      "file": "invoice-editor-1000.7d093c74fa.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1102,
+      "bytes": 51946,
+      "file": "invoice-editor-1600.699b77cc6f.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1516,
+      "bytes": 78818,
+      "file": "invoice-editor-2200.7bdaf88f23.webp"
+    }
+  ],
+  "ledger": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 11018,
+      "file": "ledger-640.6984881759.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 21090,
+      "file": "ledger-1000.fa75c85f3d.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 44368,
+      "file": "ledger-1600.b7d885c318.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 68888,
+      "file": "ledger-2200.3aaa8a2e66.webp"
+    }
+  ],
+  "payments": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 19446,
+      "file": "payments-640.e537a879cf.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 39122,
+      "file": "payments-1000.68e9b9ca1e.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 86076,
+      "file": "payments-1600.0800ec8449.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 134874,
+      "file": "payments-2200.e90b088208.webp"
+    }
+  ],
+  "printed-invoice": [
+    {
+      "width": 640,
+      "height": 905,
+      "bytes": 11720,
+      "file": "printed-invoice-640.a993bcdd2b.webp"
+    },
+    {
+      "width": 1000,
+      "height": 1414,
+      "bytes": 21006,
+      "file": "printed-invoice-1000.dbd9cd1dea.webp"
+    }
+  ],
+  "products": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 11292,
+      "file": "products-640.4c2edbade1.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 21372,
+      "file": "products-1000.6b7e13560c.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 46326,
+      "file": "products-1600.a47a3c7017.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 71884,
+      "file": "products-2200.c9fc473bd2.webp"
+    }
+  ],
+  "reports": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 11190,
+      "file": "reports-640.25599bf8ee.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 21538,
+      "file": "reports-1000.8ddf291e94.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 45242,
+      "file": "reports-1600.a454d0315b.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 70958,
+      "file": "reports-2200.d18c19e6cd.webp"
+    }
+  ],
+  "sales": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 20950,
+      "file": "sales-640.8a6c73383c.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 41796,
+      "file": "sales-1000.b56899f4d0.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 92818,
+      "file": "sales-1600.6032e632c8.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 147308,
+      "file": "sales-2200.1cefce31e9.webp"
+    }
+  ],
+  "settings": [
+    {
+      "width": 640,
+      "height": 407,
+      "bytes": 5786,
+      "file": "settings-640.0ce8314970.webp"
+    },
+    {
+      "width": 1000,
+      "height": 636,
+      "bytes": 11540,
+      "file": "settings-1000.1d7c315abe.webp"
+    },
+    {
+      "width": 1600,
+      "height": 1018,
+      "bytes": 24966,
+      "file": "settings-1600.a0c26b82c2.webp"
+    },
+    {
+      "width": 2200,
+      "height": 1400,
+      "bytes": 39292,
+      "file": "settings-2200.de650ab69b.webp"
+    }
+  ]
+}
