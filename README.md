@@ -13,6 +13,9 @@ docs.html             the full user guide
 assets/style.css      design tokens and layout
 assets/app.js         screenshot tabs, lightbox, docs contents
 assets/screens/       screenshots, generated from the real application
+assets/favicon.svg    the mark, as vector
+assets/og-card.png    the Open Graph card, 1200x630
+assets/brand/         the LinkedIn banner and avatar, uploaded by hand
 downloads/            the Windows installer, served directly
 vercel.json           caching and security headers
 ```
@@ -89,6 +92,22 @@ Two things to remember when editing this file:
 - **Keep the `source` patterns from overlapping.** When two rules matched
   the same path, the broader one won and a deliberately long cache came
   out as something else entirely.
+
+### After changing the logo or the wording on a card
+
+Nothing in `assets/` that carries the mark is edited here. The favicon,
+the Open Graph card and the LinkedIn images are all generated in the
+application repository, from the same geometry the desktop icon is drawn
+from, and land in this checkout when it sits beside it:
+
+```bash
+python tools/make_icon.py     # the mark: .ico, .png, .svg -> assets/favicon.svg
+python tools/make_social.py   # og-card.png and assets/brand/
+```
+
+The only copy of the mark kept by hand is the inline `<svg>` in the
+`.brand` link at the top of each page, which is there so the mark can
+take the theme's accent from CSS rather than baking one colour in.
 
 ### After changing any screenshot
 

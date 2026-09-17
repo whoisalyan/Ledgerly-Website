@@ -37,7 +37,7 @@ how it behaves:
 
 - Installer: https://ledgerly-website-iota.vercel.app/downloads/LedgerlySetup-0.1.0.exe
 - Version 0.1.0, 34.5 MB, Windows 10 and 11 (64-bit)
-- SHA-256: 7ae7d1c31a87072140f49a993ffa715b03573a9c22b24d06e396877d5cb87ba0
+- SHA-256: 857aeff24aee8e83ca8d44f84d298e0416bc654f55cbed5fd6b32bc9235b779d
 - Not code-signed yet, so Windows SmartScreen shows a warning on first run.
 
 ## Licensing

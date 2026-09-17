@@ -271,17 +271,22 @@ p {
   color: var(--text);
 }
 
+/* The mark: the accent square is CSS so it follows the theme, and the
+   ruled ledger inside it is an inline SVG taking currentColor. Same
+   geometry as resources/icons, which tools/make_icon.py generates. */
 .mark {
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 7px;
   background: var(--accent);
-  display: grid;
-  place-items: center;
   color: var(--on-accent);
-  font-weight: 700;
-  font-size: 1rem;
   flex: none;
+}
+
+.mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .site-nav {
